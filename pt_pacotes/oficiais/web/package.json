@@ -1,0 +1,8 @@
+{
+  "nome": "web",
+  "versao": "1.0.0",
+  "autor": "Felipe605 (Mista)",
+  "descricao": "Requisições HTTP e APIs",
+  "principal": "main.pt",
+  "categoria": "rede"
+}

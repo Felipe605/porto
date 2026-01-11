@@ -1,0 +1,15 @@
+# Calculadora simples em Porto
+escreva "=== Calculadora Porto ==="
+escreva "Digite o primeiro número:"
+leia num1
+escreva "Digite o segundo número:"
+leia num2
+
+variavel soma = num1 + num2
+variavel sub = num1 - num2
+variavel mult = num1 * num2
+
+escreva "Resultados:"
+escreva soma
+escreva sub
+escreva mult

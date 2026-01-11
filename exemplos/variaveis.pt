@@ -1,0 +1,9 @@
+# Trabalhando com variáveis
+variavel idade = 25
+variavel nome = "Mista"
+variavel pi = 3.14159
+
+escreva "Demonstração de variáveis em Porto"
+escreva nome
+escreva idade
+escreva pi

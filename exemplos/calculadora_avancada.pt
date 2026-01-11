@@ -1,0 +1,26 @@
+# Calculadora avançada
+escreva "=== Calculadora Porto v2.0 ==="
+escreva "Digite o primeiro número:"
+leia num1
+
+escreva "Digite o segundo número:"
+leia num2
+
+variavel soma = num1 + num2
+variavel sub = num1 - num2
+variavel mult = num1 * num2
+variavel div = num1 / num2
+
+escreva "Resultados:"
+escreva soma
+escreva sub
+escreva mult
+escreva div
+
+se num1 > num2 entao
+    escreva "O primeiro número é maior!"
+fim
+
+se num2 > num1 entao
+    escreva "O segundo número é maior!"
+fim

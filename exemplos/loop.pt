@@ -1,0 +1,10 @@
+# Exemplo de loop em Porto
+variavel contador = 1
+
+escreva "Contando até 5:"
+enquanto contador <= 5 faca
+    escreva contador
+    variavel contador = contador + 1
+fim
+
+escreva "Fim!"

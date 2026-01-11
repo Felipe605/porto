@@ -1,0 +1,8 @@
+{
+  "nome": "entrada_saida",
+  "versao": "1.0.0",
+  "autor": "Felipe605 (Mista)",
+  "descricao": "Funções avançadas de I/O",
+  "principal": "main.pt",
+  "categoria": "sistema"
+}

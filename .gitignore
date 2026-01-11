@@ -1,0 +1,20 @@
+# Arquivos compilados
+*.o
+*.out
+src/porto
+porto
+
+# Sistema
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Pacotes instalados
+pt_pacotes/instalados/*
+!pt_pacotes/instalados/.gitkeep
+
+# Logs
+*.log
+tmp/
+temp/

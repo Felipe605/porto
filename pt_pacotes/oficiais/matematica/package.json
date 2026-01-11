@@ -1,0 +1,8 @@
+{
+  "nome": "matematica",
+  "versao": "1.0.0",
+  "autor": "Felipe605 (Mista)",
+  "descricao": "Biblioteca matemática para Porto",
+  "principal": "main.pt",
+  "categoria": "utilidades"
+}

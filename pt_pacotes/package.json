@@ -1,0 +1,8 @@
+{
+  "nome": "porto-stdlib",
+  "versao": "2.0.0",
+  "autor": "Felipe605 (Mista)",
+  "email": "mistall900@gmail.com",
+  "repositorio": "https://github.com/Felipe605/porto",
+  "pacotes_oficiais": ["matematica", "texto", "entrada_saida", "web"]
+}

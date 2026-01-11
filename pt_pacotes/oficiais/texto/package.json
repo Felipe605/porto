@@ -1,0 +1,8 @@
+{
+  "nome": "texto",
+  "versao": "1.0.0",
+  "autor": "Felipe605 (Mista)",
+  "descricao": "Manipulação de textos e strings",
+  "principal": "main.pt",
+  "categoria": "utilidades"
+}
