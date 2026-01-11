@@ -354,7 +354,7 @@ Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para detalhes.
 - Twitter: [@MistaGuido75430](https://twitter.com/MistaGuido75430)
 - Reddit: [u/mistalll](https://reddit.com/u/mistalll)
 - Email: mistall900@gmail.com
-- Discord: Mista
+- Discord: mista.lll
 
 ---
 
