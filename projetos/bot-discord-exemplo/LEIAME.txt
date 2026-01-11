@@ -1,0 +1,19 @@
+# Como Usar Este Bot
+
+1. Pegue seu token do Discord:
+   https://discord.com/developers/applications
+
+2. Edite meu_bot.pt e coloque seu token em:
+   discord.criar("SEU_TOKEN_AQUI", "!")
+
+3. Execute:
+   porto meu_bot.pt
+
+4. Comandos disponíveis:
+   !ping
+   !ola
+   !info
+   !contar
+   !calc
+
+Divirta-se! 🚀

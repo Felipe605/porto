@@ -1,0 +1,36 @@
+# Exemplo de uso do pacote Discord
+# Como usar a biblioteca Discord em Porto
+
+importa "discord"
+
+# Configurar bot
+discord.criar("SEU_TOKEN_AQUI", "!")
+
+# Registrar comandos
+discord.comando("ola", "Olá! Sou um bot em Porto!")
+discord.comando("ping", "Pong! 🏓")
+
+# Comando com lógica
+discord.comando "ajuda"
+    escreva "Comandos disponíveis:"
+    escreva "!ola - Sauda o usuário"
+    escreva "!ping - Responde com pong"
+    escreva "!ajuda - Mostra esta mensagem"
+fimcomando
+
+# Evento: quando conectar
+discord.ao_conectar
+    escreva "Bot conectado com sucesso!"
+fimevento
+
+# Evento: ao receber mensagem
+discord.ao_mensagem
+    variavel msg = discord.mensagem_atual
+    
+    se msg == "bom dia" entao
+        discord.responder("Bom dia! ☀️")
+    fim
+fimevento
+
+# Iniciar bot
+discord.iniciar()

@@ -1,0 +1,5 @@
+# Teste do pacote Discord
+importa "discord"
+
+escreva "✅ Pacote Discord carregado com sucesso!"
+escreva "Pronto para criar bots!"

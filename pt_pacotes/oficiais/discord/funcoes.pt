@@ -1,0 +1,26 @@
+# Funções Discord para Porto
+# API simplificada para criar bots
+
+# discord.criar(token, prefixo)
+# Cria e configura um bot
+
+# discord.comando(nome, resposta)
+# Registra um comando
+
+# discord.ao_conectar(acao)
+# Define ação quando bot conectar
+
+# discord.ao_mensagem(acao)
+# Define ação quando receber mensagem
+
+# discord.ao_entrar_membro(acao)
+# Define ação quando alguém entrar no servidor
+
+# discord.enviar(canal, mensagem)
+# Envia mensagem para um canal
+
+# discord.responder(mensagem)
+# Responde à mensagem atual
+
+# discord.iniciar()
+# Inicia o bot

@@ -1,0 +1,82 @@
+# Meu Primeiro Bot Discord em Porto!
+# Criado com a linguagem Porto
+
+importa "discord"
+
+# Configuração (substitua SEU_TOKEN pelo token real)
+discord.criar("SEU_TOKEN_AQUI", "!")
+
+# ===== COMANDOS =====
+
+# Comando simples
+discord.comando("ping", "🏓 Pong!")
+
+# Comando: olá
+discord.comando "ola"
+    discord.responder("Olá! 👋")
+    discord.responder("Eu sou um bot feito em PORTUGUÊS!")
+    discord.responder("Usando a linguagem Porto 🇧🇷")
+fimcomando
+
+# Comando: info
+discord.comando "info"
+    discord.responder("📊 Informações:")
+    discord.responder("Linguagem: Porto")
+    discord.responder("Versão: 2.0")
+    discord.responder("Criador: Felipe605")
+fimcomando
+
+# Comando: contador
+discord.comando "contar"
+    variavel i = 1
+    
+    discord.responder("Contando até 5:")
+    
+    enquanto i <= 5 faca
+        discord.responder(i)
+        variavel i = i + 1
+    fim
+    
+    discord.responder("Pronto! ✅")
+fimcomando
+
+# Comando: calcular
+discord.comando "calc"
+    variavel num1 = 10
+    variavel num2 = 25
+    variavel soma = num1 + num2
+    
+    discord.responder("Calculando...")
+    discord.responder(soma)
+fimcomando
+
+# ===== EVENTOS =====
+
+# Quando o bot conectar
+discord.ao_conectar
+    escreva "✅ Bot Discord em Porto conectado!"
+    escreva "Pronto para receber comandos!"
+fimevento
+
+# Quando receber mensagem
+discord.ao_mensagem
+    variavel msg = discord.mensagem_atual
+    
+    # Responde a "oi"
+    se msg == "oi" entao
+        discord.responder("Oi! Tudo bem? 😊")
+    fim
+    
+    # Responde a "tchau"
+    se msg == "tchau" entao
+        discord.responder("Até logo! 👋")
+    fim
+fimevento
+
+# Quando alguém entrar no servidor
+discord.ao_entrar_membro
+    discord.enviar("#geral", "Bem-vindo ao servidor!")
+fimevento
+
+# ===== INICIAR BOT =====
+discord.iniciar()

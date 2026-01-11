@@ -1,0 +1,15 @@
+{
+  "nome": "discord",
+  "versao": "1.0.0",
+  "autor": "Felipe605 (Mista)",
+  "descricao": "Biblioteca para criar bots Discord em Porto",
+  "principal": "main.pt",
+  "categoria": "rede",
+  "dependencias": {
+    "python3": ">=3.8",
+    "discord.py": ">=2.0"
+  },
+  "scripts": {
+    "instalar": "pip install discord.py"
+  }
+}
