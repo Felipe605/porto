@@ -168,7 +168,7 @@ MIT License - Felipe605 (Mista)
 **Felipe605 (Mista)**
 - GitHub: [@Felipe605](https://github.com/Felipe605)
 - Email: mistall900@gmail.com
-- Discord: Mista
+- Discord: mista.lll
 
 ---
 
