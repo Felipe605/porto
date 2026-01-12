@@ -1,0 +1,21 @@
+# Arrays em Porto V2.5 - COM INDEXAÇÃO!
+
+escreva "=== Arrays com Indexação ==="
+
+# Criar array
+variavel numeros = [10, 20, 30, 40, 50]
+
+# Acessar elementos
+escreva "Primeiro: " + numeros[0]
+escreva "Terceiro: " + numeros[2]
+escreva "Último: " + numeros[4]
+
+# Array de textos
+variavel nomes = ["Ana", "Bruno", "Carlos", "Diana"]
+escreva "Nome 2: " + nomes[1]
+
+# Tamanho
+variavel tam = numeros.tamanho()
+escreva "Tamanho: " + tam
+
+escreva "✅ Arrays funcionando!"

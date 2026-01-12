@@ -1,0 +1,42 @@
+# Sistema de Notas - Exemplo Completo
+
+funcao calcular_media(notas)
+    variavel soma = 0
+    variavel tamanho = notas.tamanho()
+    
+    para i de 0 ate tamanho - 1 faca
+        variavel soma = soma + notas[i]
+    fim
+    
+    retorna soma / tamanho
+fimfuncao
+
+funcao situacao(media)
+    se media >= 7 entao
+        retorna "Aprovado"
+    senao
+        se media >= 5 entao
+            retorna "Recuperação"
+        senao
+            retorna "Reprovado"
+        fim
+    fim
+fimfuncao
+
+escreva "=== Sistema de Notas ==="
+
+variavel aluno = "Mista"
+variavel notas = [8.5, 7.0, 9.0, 6.5]
+
+escreva "Aluno: " + aluno
+escreva "Notas:"
+
+para i de 0 ate notas.tamanho() - 1 faca
+    escreva "  Nota " + (i + 1) + ": " + notas[i]
+fim
+
+variavel media = calcular_media(notas)
+escreva "Média: " + media
+
+variavel status = situacao(media)
+escreva "Situação: " + status

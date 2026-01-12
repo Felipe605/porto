@@ -1,0 +1,27 @@
+# String Methods em Porto V2.5!
+
+escreva "=== Manipulação de Strings ==="
+
+variavel texto = "Porto"
+
+# Tamanho
+variavel tam = texto.tamanho()
+escreva "Tamanho de 'Porto': " + tam
+
+# Maiúscula
+variavel upper = texto.maiuscula()
+escreva "Maiúscula: " + upper
+
+# Minúscula
+variavel lower = texto.minuscula()
+escreva "Minúscula: " + lower
+
+# Substring
+variavel parte = texto.substring(0, 3)
+escreva "Substring(0,3): " + parte
+
+# Concatenação
+variavel mensagem = "Linguagem " + texto + " v2.5!"
+escreva mensagem
+
+escreva "✅ Strings funcionando!"

@@ -1,0 +1,18 @@
+# Fibonacci com Funções Recursivas!
+
+funcao fibonacci(n)
+    se n <= 1 entao
+        retorna n
+    senao
+        retorna fibonacci(n - 1) + fibonacci(n - 2)
+    fim
+fimfuncao
+
+escreva "=== Sequência de Fibonacci ==="
+
+para i de 0 ate 10 faca
+    variavel fib = fibonacci(i)
+    escreva "F(" + i + ") = " + fib
+fim
+
+escreva "✅ Fibonacci funcionando!"

@@ -1,0 +1,31 @@
+# Funções em Porto V2.5 - FUNCIONANDO!
+
+funcao somar(a, b)
+    retorna a + b
+fimfuncao
+
+funcao multiplicar(x, y)
+    variavel resultado = x * y
+    retorna resultado
+fimfuncao
+
+funcao fatorial(n)
+    se n <= 1 entao
+        retorna 1
+    senao
+        retorna n * fatorial(n - 1)
+    fim
+fimfuncao
+
+# Testando funções
+escreva "=== Testando Funções ==="
+variavel soma = somar(10, 5)
+escreva "10 + 5 = " + soma
+
+variavel mult = multiplicar(7, 6)
+escreva "7 x 6 = " + mult
+
+variavel fat = fatorial(5)
+escreva "5! = " + fat
+
+escreva "✅ Funções funcionando!"

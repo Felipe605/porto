@@ -1,0 +1,23 @@
+# File I/O em Porto V2.5!
+
+escreva "=== Escrevendo arquivo ==="
+
+# Criar e escrever arquivo
+variavel arq = abrir("teste.txt", "escrita")
+arq.escrever("Olá do Porto V2.5!")
+arq.escrever("Segunda linha")
+arq.fechar()
+
+escreva "✅ Arquivo escrito!"
+
+escreva ""
+escreva "=== Lendo arquivo ==="
+
+# Ler arquivo
+variavel arq2 = abrir("teste.txt", "leitura")
+variavel conteudo = arq2.ler()
+escreva "Conteúdo:"
+escreva conteudo
+arq2.fechar()
+
+escreva "✅ Arquivo lido!"

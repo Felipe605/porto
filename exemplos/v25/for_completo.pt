@@ -1,0 +1,24 @@
+# For Loops em Porto V2.5 - FUNCIONANDO!
+
+escreva "=== For Numérico ==="
+para i de 1 ate 5 faca
+    escreva "Número: " + i
+fim
+
+escreva ""
+escreva "=== For em Array ==="
+variavel frutas = ["maçã", "banana", "laranja", "uva"]
+
+para fruta em frutas faca
+    escreva "Fruta: " + fruta
+fim
+
+escreva ""
+escreva "=== Tabuada com For ==="
+variavel numero = 7
+para i de 1 ate 10 faca
+    variavel resultado = numero * i
+    escreva numero + " x " + i + " = " + resultado
+fim
+
+escreva "✅ For loops funcionando!"
