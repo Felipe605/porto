@@ -1,149 +1,121 @@
 # 🇧🇷 Porto - Linguagem de Programação em Português
 
-![Porto](https://img.shields.io/badge/Porto-v2.5.0-purple?style=for-the-badge)
+![Porto](https://img.shields.io/badge/Porto-v2.0.0-purple?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Termux-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Funcional-success?style=for-the-badge)
 
-**A primeira linguagem de programação totalmente em português**
+**A primeira linguagem de programação totalmente em português para Termux**
 
-Criada por **mista.lll** (Felipe605)
+Criada por **Felipe605 (Mista)**
 
 🐦 Twitter: [@MistaGuido75430](https://twitter.com/MistaGuido75430)  
-📱 Reddit: [u/mistalll](https://reddit.com/u/mistalll)  
-💬 Discord: **mista.lll**  
-💻 GitHub: [@Felipe605](https://github.com/Felipe605)
+📱 Reddit: [u/mistalll](https://reddit.com/u/mistalll)
 
 ---
 
-## 🎉 Porto V2.5 - TOTALMENTE FUNCIONAL!
+## 🚀 Porto V2.0.0 - NOVIDADES!
 
-Porto agora é uma **linguagem de programação completa e funcional** com todos os recursos essenciais implementados e testados!
+### ✨ Recursos da V2
 
----
-
-## ✨ Recursos da V2.5
-
-### 1️⃣ **Funções com Parâmetros e Return**
-
+#### 1. **Funções Definidas pelo Usuário**
 ```porto
 funcao somar(a, b)
-    retorna a + b
+    variavel resultado = a + b
+    retorna resultado
 fimfuncao
 
-variavel resultado = somar(10, 5)
-escreva resultado  # 15
+variavel x = somar(10, 5)
+escreva x  # 15
 ```
 
-**Recursão funciona perfeitamente:**
+#### 2. **Arrays e Listas**
 ```porto
-funcao fatorial(n)
-    se n <= 1 entao
-        retorna 1
-    senao
-        retorna n * fatorial(n - 1)
-    fim
-fimfuncao
+variavel numeros = [1, 2, 3, 4, 5]
+variavel nomes = ["João", "Maria", "Pedro"]
 
-escreva fatorial(5)  # 120
+escreva numeros
+escreva nomes
 ```
 
----
-
-### 2️⃣ **Arrays com Indexação**
-
+#### 3. **For Loops**
 ```porto
-variavel numeros = [10, 20, 30, 40, 50]
-
-# Acessar elementos
-escreva numeros[0]  # 10
-escreva numeros[2]  # 30
-
-# Array de textos
-variavel nomes = ["Ana", "Bruno", "Carlos"]
-escreva nomes[1]  # Bruno
-
-# Tamanho
-escreva numeros.tamanho()  # 5
-```
-
----
-
-### 3️⃣ **For Loops Completos**
-
-**For numérico:**
-```porto
+# For numérico
 para i de 1 ate 10 faca
     escreva i
 fim
+
+# For em array
+variavel items = ["a", "b", "c"]
+para item em items faca
+    escreva item
+fim
 ```
 
-**For em array:**
+#### 4. **Senao (Else)**
 ```porto
-variavel frutas = ["maçã", "banana", "laranja"]
+variavel idade = 18
 
-para fruta em frutas faca
-    escreva "Eu gosto de " + fruta
+se idade >= 18 entao
+    escreva "Maior de idade"
+senao
+    escreva "Menor de idade"
+fim
+```
+
+#### 5. **Operadores Lógicos**
+```porto
+se x > 5 e y < 10 entao
+    escreva "Ambos verdadeiros!"
+fim
+
+se a == 0 ou b == 1 entao
+    escreva "Pelo menos um verdadeiro!"
+fim
+```
+
+#### 6. **Sistema de Plugins Dinâmico**
+```
+meu_projeto/
+├── main.pt
+└── porto_modules/
+    └── meu_plugin/
+        └── plugin.pt
+```
+
+```porto
+importa "meu_plugin"
+# Use as funções do plugin
+```
+
+Porto procura plugins em:
+- `./porto_modules/nome/`
+- `./pt_pacotes/oficiais/nome/`
+- `$HOME/porto/pt_pacotes/oficiais/nome/`
+
+#### 7. **Tratamento de Erros**
+```porto
+tenta
+    variavel x = 10 / 0
+pegue erro
+    escreva "Erro capturado!"
 fim
 ```
 
 ---
 
-### 4️⃣ **String Methods**
+## 📖 Sobre
 
-```porto
-variavel texto = "Porto"
+**Porto** é uma linguagem de programação moderna, simples e totalmente em português, criada especialmente para rodar no Termux. Perfeita para iniciantes aprenderem programação na sua língua nativa!
 
-escreva texto.tamanho()      # 5
-escreva texto.maiuscula()    # PORTO
-escreva texto.minuscula()    # porto
-escreva texto.substring(0,3) # Por
+### ✨ Características
 
-# Concatenação
-variavel msg = "Linguagem " + texto + " V2.5!"
-escreva msg
-```
-
----
-
-### 5️⃣ **File I/O (Arquivos)**
-
-```porto
-# Escrever
-variavel arq = abrir("dados.txt", "escrita")
-arq.escrever("Olá do Porto!")
-arq.fechar()
-
-# Ler
-variavel arq2 = abrir("dados.txt", "leitura")
-variavel conteudo = arq2.ler()
-escreva conteudo
-arq2.fechar()
-```
-
----
-
-## 📋 Recursos Completos
-
-| Recurso | V2.0 | V2.5 | Status |
-|---------|------|------|--------|
-| Variáveis | ✅ | ✅ | Funcional |
-| Matemática (+, -, *, /, %) | ✅ | ✅ | Funcional |
-| Entrada/Saída | ✅ | ✅ | Funcional |
-| Condicionais (se/senao) | ✅ | ✅ | Funcional |
-| Loops (enquanto) | ✅ | ✅ | Funcional |
-| **Funções** | 🔶 | ✅ | **Implementado!** |
-| **Recursão** | ❌ | ✅ | **Implementado!** |
-| **Arrays com []** | 🔶 | ✅ | **Implementado!** |
-| **For loops** | 🔶 | ✅ | **Implementado!** |
-| **String methods** | ❌ | ✅ | **Implementado!** |
-| **File I/O** | ❌ | ✅ | **Implementado!** |
-| Operadores lógicos (e, ou) | ✅ | ✅ | Funcional |
-| Comentários (#) | ✅ | ✅ | Funcional |
-| Syntax highlighting | ✅ | ✅ | Funcional |
-| Package manager | ✅ | ✅ | Funcional |
-
-**🎉 Porto V2.5 = Linguagem COMPLETA e PRONTA para uso!**
+- 🇧🇷 **100% em Português** - Todos os comandos e sintaxe em português
+- 🚀 **Simples e Intuitiva** - Fácil de aprender, mesmo sem experiência
+- 🎨 **Syntax Highlighting** - Destaque de sintaxe colorida no nano
+- 📦 **Package Manager** - Sistema próprio de gerenciamento de pacotes
+- 🔧 **Extensível** - Crie e compartilhe seus próprios pacotes
+- ⚡ **Rápido** - Compilado em C++ para máxima performance
+- 🌐 **Open Source** - Código aberto e gratuito
 
 ---
 
@@ -161,7 +133,7 @@ chmod +x install_porto.sh
 bash install_porto.sh
 ```
 
-### Instalação Rápida
+### Instalação rápida (uma linha)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Felipe605/porto/main/install_porto.sh | bash
@@ -169,142 +141,61 @@ curl -fsSL https://raw.githubusercontent.com/Felipe605/porto/main/install_porto.
 
 ---
 
-## 💡 Exemplos Práticos
+## 💡 Exemplos Rápidos
 
-### Fibonacci Recursivo
+### Olá Mundo
 ```porto
-funcao fibonacci(n)
-    se n <= 1 entao
-        retorna n
-    senao
-        retorna fibonacci(n-1) + fibonacci(n-2)
-    fim
-fimfuncao
+escreva "Olá, Mundo!"
+```
 
-escreva "Sequência de Fibonacci:"
-para i de 0 ate 10 faca
-    escreva "F(" + i + ") = " + fibonacci(i)
+### Variáveis e Matemática
+```porto
+variavel nome = "Mista"
+variavel idade = 25
+variavel resultado = 10 + 5
+
+escreva nome
+escreva resultado
+```
+
+### Condicional com Senao
+```porto
+variavel idade = 18
+
+se idade >= 18 entao
+    escreva "Maior de idade!"
+senao
+    escreva "Menor de idade!"
 fim
 ```
 
-**Saída:**
-```
-Sequência de Fibonacci:
-F(0) = 0
-F(1) = 1
-F(2) = 1
-F(3) = 2
-F(4) = 3
-F(5) = 5
-F(6) = 8
-F(7) = 13
-F(8) = 21
-F(9) = 34
-F(10) = 55
-```
-
----
-
-### Sistema de Notas Completo
+### Loop
 ```porto
-funcao calcular_media(notas)
-    variavel soma = 0
-    variavel tam = notas.tamanho()
-    
-    para i de 0 ate tam - 1 faca
-        variavel soma = soma + notas[i]
-    fim
-    
-    retorna soma / tam
-fimfuncao
+variavel i = 1
 
-funcao situacao(media)
-    se media >= 7 entao
-        retorna "Aprovado"
-    senao
-        se media >= 5 entao
-            retorna "Recuperação"
-        senao
-            retorna "Reprovado"
-        fim
-    fim
-fimfuncao
-
-# Usar o sistema
-variavel aluno = "Mista"
-variavel notas = [8.5, 7.0, 9.0, 6.5]
-
-escreva "Aluno: " + aluno
-escreva "Notas: " + notas
-
-variavel media = calcular_media(notas)
-escreva "Média: " + media
-
-variavel status = situacao(media)
-escreva "Situação: " + status
-```
-
----
-
-### Manipulação de Arquivos
-```porto
-# Criar arquivo de log
-variavel log = abrir("sistema.log", "escrita")
-log.escrever("=== Log do Sistema ===")
-log.escrever("Sistema iniciado com sucesso")
-log.fechar()
-
-# Ler e processar
-variavel arquivo = abrir("sistema.log", "leitura")
-variavel conteudo = arquivo.ler()
-arquivo.fechar()
-
-escreva "Conteúdo do log:"
-escreva conteudo
-
-# Adicionar mais informações
-variavel log2 = abrir("sistema.log", "adicionar")
-log2.escrever("Nova entrada no log")
-log2.fechar()
-```
-
----
-
-### Tabuada Completa
-```porto
-funcao gerar_tabuada(numero)
-    escreva "=== Tabuada do " + numero + " ==="
-    
-    para i de 1 ate 10 faca
-        variavel resultado = numero * i
-        escreva numero + " x " + i + " = " + resultado
-    fim
-fimfuncao
-
-# Gerar várias tabuadas
-para n de 1 ate 5 faca
-    gerar_tabuada(n)
-    escreva ""
+enquanto i <= 5 faca
+    escreva i
+    variavel i = i + 1
 fim
 ```
 
----
-
-### Processamento de Texto
+### Funções (V2!)
 ```porto
-funcao processar_texto(texto)
-    escreva "Original: " + texto
-    escreva "Tamanho: " + texto.tamanho()
-    escreva "Maiúscula: " + texto.maiuscula()
-    escreva "Minúscula: " + texto.minuscula()
-    escreva "Primeiras 3 letras: " + texto.substring(0, 3)
+funcao dobro(x)
+    retorna x * 2
 fimfuncao
 
-variavel frase = "Porto"
-processar_texto(frase)
+escreva dobro(21)  # 42
 ```
 
-Mais exemplos em: [`/exemplos/v25`](./exemplos/v25)
+### Arrays (V2!)
+```porto
+variavel frutas = ["maçã", "banana", "laranja"]
+
+para fruta em frutas faca
+    escreva fruta
+fim
+```
 
 ---
 
@@ -312,25 +203,33 @@ Mais exemplos em: [`/exemplos/v25`](./exemplos/v25)
 
 Porto vem com 5 pacotes oficiais:
 
-| Pacote | Descrição | Status |
-|--------|-----------|--------|
-| **matematica** | Funções matemáticas | ✅ |
-| **texto** | Manipulação de strings | ✅ |
-| **entrada_saida** | I/O avançado | ✅ |
-| **web** | HTTP e APIs | ✅ |
-| **discord** | Bots Discord em PT! | ✅ |
+| Pacote | Descrição |
+|--------|-----------|
+| **matematica** | Funções matemáticas avançadas |
+| **texto** | Manipulação de strings |
+| **entrada_saida** | I/O de arquivos |
+| **web** | Requisições HTTP e APIs |
+| **discord** | Criar bots Discord em português! 🤖 |
 
 ### Instalar pacote:
+
 ```bash
 porto-pkg instalar discord
 ```
 
-### Usar no código:
+### Exemplo: Bot Discord em Português
+
 ```porto
 importa "discord"
 
-discord.criar("TOKEN", "!")
-discord.comando("oi", "Fala, mano! 🤙")
+discord.criar("SEU_TOKEN", "!")
+discord.comando("ola", "Olá! Sou um bot em português! 🇧🇷")
+discord.comando("ping", "Pong! 🏓")
+
+discord.ao_conectar
+    escreva "Bot online!"
+fimevento
+
 discord.iniciar()
 ```
 
@@ -338,14 +237,14 @@ discord.iniciar()
 
 ## 🎨 Syntax Highlighting
 
-Porto tem destaque de sintaxe **colorido** no nano!
+Porto tem destaque de sintaxe colorido no **nano**!
 
 ```bash
 nano meu_programa.pt
 ```
 
 **Cores:**
-- 🟣 **Roxo** - Palavras-chave (escreva, variavel, funcao, para, se)
+- 🟣 **Roxo/Magenta** - Palavras-chave (`escreva`, `variavel`, `se`, etc)
 - 🟡 **Amarelo** - Strings ("texto")
 - 🔵 **Cyan** - Números (123, 3.14)
 - 🟢 **Verde** - Comentários (# comentário)
@@ -362,30 +261,9 @@ porto programa.pt
 
 ### Package Manager
 ```bash
-porto-pkg listar             # Ver pacotes
-porto-pkg instalar matematica  # Instalar
-porto-pkg criar-plugin utils   # Criar plugin
-```
-
-### Testar instalação
-```bash
-# Criar teste rápido
-cat > teste.pt << 'EOF'
-escreva "Porto V2.5 funcionando!"
-
-funcao somar(a, b)
-    retorna a + b
-fimfuncao
-
-escreva "5 + 3 = " + somar(5, 3)
-
-variavel nums = [10, 20, 30]
-escreva "Array: " + nums
-escreva "Primeiro: " + nums[0]
-EOF
-
-# Executar
-porto teste.pt
+porto-pkg listar          # Ver pacotes instalados
+porto-pkg instalar X      # Instalar pacote
+porto-pkg criar-plugin X  # Criar novo plugin
 ```
 
 ---
@@ -395,122 +273,98 @@ porto teste.pt
 ```
 porto/
 ├── src/
-│   ├── porto_v25.cpp        # Interpretador V2.5 ✨
-│   ├── porto_v2.cpp         # V2.0
-│   └── porto.cpp            # V1.0 (backup)
+│   ├── porto_v2.cpp      # Interpretador V2
+│   └── porto.cpp         # Interpretador V1 (backup)
 ├── exemplos/
-│   ├── v25/                 # Exemplos V2.5 ✨
-│   │   ├── funcoes_completas.pt
-│   │   ├── arrays_completos.pt
-│   │   ├── for_completo.pt
-│   │   ├── strings.pt
-│   │   ├── arquivos.pt
-│   │   ├── fibonacci.pt
-│   │   └── sistema_notas.pt
-│   ├── v2/                  # Exemplos V2.0
-│   └── ola_mundo.pt         # Básico
-├── tests/
-│   └── v25/
-│       └── test_all.sh      # Suite de testes ✨
+│   ├── v2/               # Exemplos V2
+│   │   ├── arrays.pt
+│   │   ├── funcoes.pt
+│   │   ├── for_loop.pt
+│   │   └── senao.pt
+│   ├── ola_mundo.pt
+│   ├── calculadora.pt
+│   └── loop.pt
 ├── pt_pacotes/
-│   └── oficiais/            # Pacotes oficiais
+│   └── oficiais/         # Pacotes oficiais
 │       ├── matematica/
 │       ├── texto/
 │       ├── entrada_saida/
 │       ├── web/
-│       └── discord/
-├── porto_modules/           # Plugins locais
-├── docs/                    # Documentação
+│       └── discord/      # Bot Discord!
+├── porto_modules/        # Plugins locais (V2)
+├── docs/
+│   └── v2/              # Documentação V2
 └── README.md
 ```
 
 ---
 
-## 🆚 Comparação de Versões
+## 🆚 V1 vs V2
 
-### V1.0 → V2.0 → V2.5
+| Recurso | V1 | V2 |
+|---------|----|----|
+| **Funções** | ❌ | ✅ |
+| **Arrays** | ❌ | ✅ |
+| **For loops** | ❌ | ✅ |
+| **Senao** | ❌ | ✅ |
+| **Operadores lógicos** | ❌ | ✅ |
+| **Plugins dinâmicos** | ❌ | ✅ |
+| **Erros descritivos** | ❌ | ✅ |
+| **Tratamento de erros** | ❌ | ✅ |
 
-| Versão | Lançamento | Principais Recursos |
-|--------|------------|---------------------|
-| **V1.0** | Jan 2026 | Básico: variáveis, if, while, I/O |
-| **V2.0** | Jan 2026 | + Estruturas (funções*, arrays*, for*) |
-| **V2.5** | Jan 2026 | ✅ **TUDO FUNCIONAL** + Strings + File I/O |
-
-*V2.0 tinha estrutura mas não executava  
-V2.5 = **IMPLEMENTAÇÃO COMPLETA** 🎉
-
----
-
-## 🧪 Testar V2.5
-
-```bash
-# Suite completa de testes
-cd tests/v25
-bash test_all.sh
-
-# Testar exemplos individuais
-porto exemplos/v25/funcoes_completas.pt
-porto exemplos/v25/fibonacci.pt
-porto exemplos/v25/sistema_notas.pt
-```
+**Código V1 continua funcionando na V2!**
 
 ---
 
 ## 🤝 Contribuir
 
-Contribuições são muito bem-vindas!
+Contribuições são muito bem-vindas! Veja [CONTRIBUTING.md](CONTRIBUTING.md)
+
+### Como contribuir:
 
 1. Fork o projeto
 2. Crie uma branch (`git checkout -b feature/nova`)
-3. Commit (`git commit -m 'Adiciona nova feature'`)
+3. Commit (`git commit -m 'Adiciona feature'`)
 4. Push (`git push origin feature/nova`)
 5. Abra um Pull Request
 
-Veja [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
+### Roadmap V2.1+
 
-### Roadmap V3.0
-
-- [ ] Classes e objetos (OOP)
-- [ ] Dicionários/mapas `{chave: valor}`
-- [ ] Try/catch funcional
-- [ ] Imports com escopo
+- [ ] Classes e objetos
+- [ ] Dicionários/mapas
+- [ ] String manipulation avançada
+- [ ] File I/O completo
+- [ ] Módulo de data/hora
 - [ ] REPL interativo
-- [ ] Debugger integrado
-- [ ] Async/await
+- [ ] Debugger
 - [ ] Mais pacotes oficiais
-- [ ] GUI toolkit
-- [ ] Web framework
 
 ---
 
 ## 📝 Licença
 
-MIT License - Código aberto e gratuito
-
-Veja [LICENSE](LICENSE) para detalhes completos.
+Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para detalhes.
 
 ---
 
 ## 👨‍💻 Autor
 
-**mista.lll** (Felipe605)
-
-- 💬 Discord: **mista.lll**
-- 🐦 Twitter: [@MistaGuido75430](https://twitter.com/MistaGuido75430)
-- 📱 Reddit: [u/mistalll](https://reddit.com/u/mistalll)
-- 💻 GitHub: [@Felipe605](https://github.com/Felipe605)
-- 📧 Email: mistall900@gmail.com
+**Felipe605 (Mista)**
+- GitHub: [@Felipe605](https://github.com/Felipe605)
+- Twitter: [@MistaGuido75430](https://twitter.com/MistaGuido75430)
+- Reddit: [u/mistalll](https://reddit.com/u/mistalll)
+- Email: mistall900@gmail.com
+- Discord: mista.lll
 
 ---
 
 ## 🌟 Apoie o Projeto
 
-- ⭐ **Dê uma estrela** no repositório
-- 🐛 **Reporte bugs** via Issues
-- 💡 **Sugira funcionalidades**
-- 📢 **Compartilhe** com amigos
-- 🤝 **Contribua** com código
-- 💰 **Considere** fazer uma doação
+- ⭐ Dê uma estrela no repositório
+- 🐛 Reporte bugs
+- 💡 Sugira funcionalidades
+- 📢 Compartilhe com amigos
+- 🤝 Contribua com código
 
 ---
 
@@ -520,56 +374,17 @@ Veja [LICENSE](LICENSE) para detalhes completos.
 ![GitHub Forks](https://img.shields.io/github/forks/Felipe605/porto?style=social)
 ![GitHub Issues](https://img.shields.io/github/issues/Felipe605/porto)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Felipe605/porto)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/Felipe605/porto)
-
----
-
-## 🎓 Aprenda Porto
-
-### Tutoriais
-- [Básico](./docs/BASICO.md) - Primeiros passos
-- [Funções](./docs/FUNCOES.md) - Como criar funções
-- [Arrays](./docs/ARRAYS.md) - Trabalhando com listas
-- [Arquivos](./docs/ARQUIVOS.md) - Ler e escrever arquivos
-
-### Exemplos Práticos
-- Ver pasta [`exemplos/v25/`](./exemplos/v25)
-- Todos os exemplos são executáveis
-- Código comentado e explicado
-
-### Comunidade
-- Discord: Junte-se à comunidade Porto
-- Reddit: r/porto (em breve)
-- Telegram: Grupo Porto Brasil (em breve)
-
----
-
-## 🏆 Conquistas
-
-- 🥇 **Primeira** linguagem 100% em português para Termux
-- 🎯 **Completamente funcional** - todos recursos implementados
-- 🚀 **Open source** - código aberto desde o início
-- 🇧🇷 **Feito no Brasil** - por brasileiros, para brasileiros
-- 📦 **Sistema de pacotes** próprio e funcional
-- 🤖 **Bots Discord** em português (único!)
 
 ---
 
 <div align="center">
 
-## 🇧🇷 PORTO V2.5 - TOTALMENTE FUNCIONAL! 🇧🇷
+**Feito com ❤️ em português para brasileiros**
 
-**Programar em português não é mais sonho - é realidade!**
+**Porto v2.0.0** - 2026
 
-**Porto v2.5.0** - Janeiro 2026
-
-Criado com ❤️ por **mista.lll**
-
----
+🇧🇷 **Programar em português é realidade!** 🇧🇷
 
 [⬆️ Voltar ao topo](#-porto---linguagem-de-programação-em-português)
-
-[![Estrelas](https://img.shields.io/github/stars/Felipe605/porto?style=social)](https://github.com/Felipe605/porto/stargazers)
-[![Forks](https://img.shields.io/github/forks/Felipe605/porto?style=social)](https://github.com/Felipe605/porto/network/members)
 
 </div>
